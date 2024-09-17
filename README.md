@@ -17,3 +17,7 @@ There is difference between the JVM version 32 bit and 64 bit. If the machine is
 1. -XX:+PrintCompilation -> Tells about how the code is compiled, which method is kept in code cache and tells alot above the code peroformance.
 2. -XX:+PrintCodeCache -> To print the size of code cache. It can be expanded upto certain limits.
 3. -XX:ReservedCodeCacheSize -> To set custom code cache size it can be 28, 28k, 28m etc values.
+4. -XX:-TiredCompilation -> To turn of compilation and only to interpretation of code.
+5. -XX:+PrintFlagsFinal -> To print all the available JVM flags
+6. -XX:CICompilerCount=X -> Number of threads present for code compilation
+7. -XX:CompileThreshold=X -> The minimum threshold amount the method should be run in order to be compile cached.
